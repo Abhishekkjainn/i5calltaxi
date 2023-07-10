@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i5 Call Taxi | Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="selecttaxi.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+
+    </header>
+
+    <div class="mainpagination">
+        <div class="pagination1 paginationinside">
+            <div class="centerimg1 centerpaginationimg">
+                <img src="taxipickup.png" alt="i5CallTaxi" width="40px" class="centerinsideimg centerinsideimg1">
+            </div>
+        </div>
+        <div class="pagination2 paginationinside" id="pagination2">
+            <div class="centerimg2 centerpaginationimg">
+                <img src="customer.png" alt="i5CallTaxi" width="30px" class="centerinsideimg centerinsideimg2">
+            </div>
+        </div>
+        <div class="pagination3 paginationinside" id="pagination3">
+            <div class="centerimg3 centerpaginationimg">
+                <img src="selecttaxi.png" alt="i5CallTaxi" width="40px" class="centerinsideimg centerinsideimg3">
+            </div>
+        </div>
+        <div class="pagination4 paginationinside" id="pagination4">
+            <div class="centerimg4 centerpaginationimg">
+                <img src="money.png" alt="i5CallTaxi" width="40px" class="centerinsideimg centerinsideimg4">
+            </div>
+        </div>
+    </div>
+
+    <div class="bookingformmaindiv">
+
+        <div class="formone forminside" id="formone">
+            <!-- <p class="pickhead">
+                Enter Pickup location
+            </p> -->
+
+            <div class="form1content">
+
+            <div class="pickinputdiv">
+                <div class="pickimage">
+                    <img src="pickuppin.png" alt="i5calltaxi" width="30px">
+                </div>
+                <input type="text" class="pickinputinside" id="pickinputinside" placeholder="Pickup Location">
+            </div>
+
+            <div class="dropinputdiv">
+                <div class="dropimage">
+                    <img src="droppin.png" alt="i5calltaxi" width="30px">
+                </div>
+                <input type="text" class="dropinputinside" placeholder="Drop Location" id="dropinputinside">
+            </div>
+
+            <div class="datetimemaindiv">
+
+                <div class="dateinsidediv">
+                    <div class="dateimage">
+                        <img src="date.png" alt="i5calltaxi" width="30px">
+                    </div>
+                    <input type="date" name="" id="dateinput" class="dateinput">
+                </div>
+
+                <hr class="sep">
+
+                <div class="timeinsidediv">
+                    <div class="timeimage">
+                        <img src="time.png" alt="i5calltaxi" width="30px">
+                    </div>
+                    <input type="time" name="" id="timeinput" class="timeinput">
+                </div>
+
+            </div>
+
+            <div class="selecttriptypemaindiv">
+                <div class="selectimage">
+                    <img src="trip.png" alt="i5calltaxi" width="40px">
+                </div>
+                <select name="selecttrip" id="selecttrip" class="selecttrip">
+                    <option value="#">Select Trip</option>
+                    <option value="onewaydroptrip">One Way Drop Trip</option>
+                    <option value="roundtrip">Round Trip</option>
+                </select>
+            </div>
+
+        </div>
+
+            <div class="proceedbuttonpage1">
+                <button class="proceedbutton proceedbutton1" onclick="page1topage2()">
+                    Proceed
+                </button>
+            </div>
+
+            
+
+
+
+
+
+
+
+        </div>
+        
+        <div class="formtwo forminside" id="formtwo">
+
+            <p class="nameinput">
+                Enter Name <input type="text" name="passengername" id="passengername" class="passengername" required>
+            </p>
+
+            <p class="nameinput phoneinput">
+                Enter Phone Number <input type="number" name="passengername" id="passengerphone" class="passengername" required>
+            </p>
+
+            <p class="nameinput emailinput">
+                Enter Email <input type="email" name="passengername" id="passengeremail" class="passengername" required>
+            </p>
+
+            <div class="proceedbuttonpage1 proceedbuttonpage2">
+                <button class="proceedbutton proceedbutton2" onclick="page2topage3()">
+                    Proceed
+                </button>
+            </div>
+
+        </div>
+
+        <div class="formthree forminside" id="formthree">
+            <div class="selectcaboverflowdiv">
+
+                <div class="sedandzire">
+                    <div class="sedandzirefirstpart">
+                        <img src="sedanicon.jpg" alt="i5calltaxisedan" width="100px" class="sedandzireimage">
+                        <div class="mainfare">
+                            Rs - <span id="farespan">1000</span>/-
+                        </div>
+                    </div>
+                    <div class="sedandziresecondpart">
+                        <p class="cardetails">
+                            Sedan - 4 Seater
+                        </p>
+                        <p class="modeldetails">
+                            Model - Dzire , Xcent
+                        </p>
+                        <p class="extras">
+                            Extras - 13 Rs / Km After derisred RangeToll Charges, Parking Charges, Hill Station ChargesInterstate Tax Permit (if applicable).
+
+                        </p>
+                        <button class="selectcabbutton" onclick="page3topage4()">
+                            Select Cab
+                        </button>
+                    </div>
+
+
+
+                </div>
+
+                <div class="sedanetios">
+                    <div class="sedandzirefirstpart">
+                        <img src="sedanicon.jpg" alt="i5calltaxisedan" width="100px" class="sedandzireimage">
+                        <div class="mainfare">
+                            Rs - <span id="farespan">1200</span>/-
+                        </div>
+                    </div>
+                    <div class="sedandziresecondpart">
+                        <p class="cardetails">
+                            Sedan - 4 Seater
+                        </p>
+                        <p class="modeldetails">
+                            Model - Toyota Etios
+                        </p>
+                        <p class="extras">
+                            Extras - 14 Rs / Km After derisred Range .Toll Charges, Parking Charges, Hill Station ChargesInterstate Tax Permit (if applicable).
+
+                        </p>
+                        <button class="selectcabbutton" onclick="page3topage4()">
+                            Select Cab
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="suvxylo">
+                    <div class="sedandzirefirstpart">
+                        <img src="sedan.png" alt="i5calltaxisedan" width="80px" class="sedandzireimage">
+                        <div class="mainfare">
+                            Rs - <span id="farespan">1800</span>/-
+                        </div>
+                    </div>
+                    <div class="sedandziresecondpart">
+                        <p class="cardetails">
+                            SUV - 7 Seater
+                        </p>
+                        <p class="modeldetails">
+                            Model - Xylo , Lodgy
+                        </p>
+                        <p class="extras">
+                            Extras - 18 Rs / Km After derisred RangeToll Charges, Parking Charges, Hill Station ChargesInterstate Tax Permit (if applicable).
+
+                        </p>
+                        <button class="selectcabbutton" onclick="page3topage4()">
+                            Select Cab
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="suvinnova">
+                    <div class="sedandzirefirstpart">
+                        <img src="sedan.png" alt="i5calltaxisedan" width="80px" class="sedandzireimage">
+                        <div class="mainfare">
+                            Rs - <span id="farespan">2000</span>/-
+                        </div>
+                    </div>
+                    <div class="sedandziresecondpart">
+                        <p class="cardetails">
+                            SUV - 7 Seater
+                        </p>
+                        <p class="modeldetails">
+                            Model - Innova 
+                        </p>
+                        <p class="extras">
+                            Extras - 19 Rs / Km After derisred RangeToll Charges, Parking Charges, Hill Station ChargesInterstate Tax Permit (if applicable).
+
+                        </p>
+                        <button class="selectcabbutton" onclick="page3topage4()">
+                            Select Cab
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="formfour forminside" id="formfour">
+            <div class="suvxylo">
+                <div class="sedandzirefirstpart">
+                    <img src="sedan.png" alt="i5calltaxisedan" width="80px" class="sedandzireimage">
+                    <div class="mainfare">
+                        Rs - <span id="farespan">1800</span>/-
+                    </div>
+                </div>
+                <div class="sedandziresecondpart">
+                    <p class="cardetails">
+                        SUV - 7 Seater
+                    </p>
+                    <p class="modeldetails">
+                        Model - Xylo , Lodgy
+                    </p>
+                    <p class="extras">
+                        Extras - 18 Rs / Km After derisred RangeToll Charges, Parking Charges, Hill Station ChargesInterstate Tax Permit (if applicable).
+
+                    </p>
+                    <button class="selectcabbutton">
+                        Confirm Cab
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="notespage4">
+                <p class="headnotes">Notes</p>
+                <p class="notestext">
+                    A) Cab and driver details will be shared 1hour before to departure.
+
+B) Driver Would wait Maximum 45 minutes from your scheduled pickup time at your pickup location. Post this, Waiting charges would be Rs.120/hr.
+<br><br>
+
+C) Due to traffic or any unavoidable reason,pickup may be delayed by 30mins.
+<br><br>
+D) AC will be switched off in hilly areas.
+<br><br>
+E) For Cancellation,no penalty till 1 hour before Scheduled pickup time & Beyond that will be charged penalty Rs.500. In case of any issue regarding cancellation, Please call our support at 9566602715.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="bannerbelowdiv" id="bannerbelowdiv">
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
